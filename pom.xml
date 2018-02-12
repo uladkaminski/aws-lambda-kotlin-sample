@@ -19,6 +19,8 @@
         <container-spark.version>0.7</container-spark.version>
         <java-core.version>1.1.0</java-core.version>
         <java-log4j.version>1.0.0</java-log4j.version>
+        <kmongo-native.version>3.5.0</kmongo-native.version>
+        <mongodb-driver.version>3.5.0</mongodb-driver.version>
     </properties>
 
     <dependencies>
@@ -57,6 +59,16 @@
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-lambda-java-log4j</artifactId>
             <version>${java-log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.litote.kmongo</groupId>
+            <artifactId>kmongo-native</artifactId>
+            <version>${kmongo-native.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver</artifactId>
+            <version>${mongodb-driver.version}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
